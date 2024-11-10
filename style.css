@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(246, 231, 221);
+}
+.cname{
+    font-family: "EB Garamond", serif;
+    position: relative;
+    bottom: 5px;
+}
+
+.title{
+    height: 40px;
+}
+
+.track{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+}
+
+.logo{
+    background-color: gold;
+    height: 120px;
+}
+
+.qut{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    justify-content: center;
+    top: 40px;
+}
+
+.book-cat{
+    font-family: "Roboto", sans-serif;
+}
+
+.login{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.icon:hover{
+    box-shadow: 0px 0px 5px black;
+}
+/*---------------------------------------------------------*/
+.nav-item a:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px lightcyan;
+    transition: all 0.2s;
+}
+
+/*--------------------------------------------------------*/
+.nrmal-images{
+    height: 280px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.nrmal-images img{
+    height: inherit;
+    width: inherit;
+}
+
+.parent-nrmal-images{
+    display: flex;
+    align-items: center;
+}
+
+/*.nrmal-video{
+    height: 280px;
+    width: 300px;
+    overflow: hidden;
+}
+.nrmal-video video{
+    height: inherit;
+    width: inherit;
+}*/
+
+.parent-nrmal-videos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid grey;
+    border-radius: 5px;
+
+}
+
+.ad-images{
+    height: 400px;
+    width: 1250px;
+    overflow: hidden;
+    margin: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-images img{
+    height: inherit;
+    width: inherit;
+}
+/*------------------------------------------------------*/
+.manga-ad-images {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 2px;
+}
+
+.manga-images {
+    height: 280px;
+    width: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.manga-images img {
+    max-height: 100%;
+    max-width: 100%;
+}
+/*--------------Authors-------------------------------*/
+.Authors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Authors img{
+    height: 280px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.Authors img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.main-Author{
+    display: flex;
+    
+}
+
+
+/*--------------------------------------------------------*/
+.card{
+    background-color: rgb(255, 244, 230);
+    height: 395px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128) ;
+    transition: all 0.8s;
+}
+
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+
+.icon-heart{
+    font-size: 1rem;
+    color: black;
+}
+
+.img-fluid{
+    box-shadow: 5px 10px 10px rgb(88, 78, 78);
+}
+
+.book-info{
+    font-family: "Bona Nova", serif;
+}
+
+.book-info del{
+    color: rgb(128, 128, 128);
+}
+.book-author{
+    font-size: 15px;
+    color: rgb(204, 107, 22);
+}
+
+.book-name{
+    font-size: 20px;
+}
+.card-title{
+    height: 200px;
+}
+
+/*---------------------------------------*/
+
+.cnt-ifo{
+    background-color: rgb(251, 226, 87);
+}
+.contact-info p{
+    margin: 2px;
+}
+
+.follow-us-on a{
+    font-size: 30px;
+    color: black;
+    margin-left: 4px;
+}
+
+/*-----------------------------------*/
+.Author-images img{
+    width: 200px;
+    height: 200px;
+    object-fit: center;
+}
