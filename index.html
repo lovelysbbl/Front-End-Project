@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+
+<!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+<!--Google font cdn link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+<!--Font Awsome cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <!--Title of the store-->
+    <div class="container-fluid" id="home">
+        <div class="row">
+            <div class="col-8 bg-dark title">
+                <h1 class="text-center text-white cname"><marquee>LTG Bookstore</marquee></h1>
+            </div>
+            <div class="col-4 bg-dark track">
+                <a href="https://maps.google.com" class="text-white text-decoration-none" target="_blank"><i class="fa-solid fa-location-dot"></i> Find a Store</a>
+                <h6 class="text-white ms-2 me-2">|</h6>
+                <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-truck"></i> Track Your Order</a>
+                <h6 class="text-white ms-1 me-1"> | </h6>
+                <a href="#" class="text-white text-decoration-none">+91 7893123447</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Logo and Search-->
+    <div class="container-fluid">
+        <div class="row logo">
+            <div class="col-3">
+                <h1 class="qut">SMART BOOK</h1>
+            </div>
+
+            <div class="col-7 m-auto">
+                <div class="input-group ">
+                    <div class="form-floating">
+                        <input type="text" class="form-control rounded-start-5" placeholder="Search by Title,Author,BookId" id="sfb" name="search">
+                        <label for="sfb" class="form-label ms-2">Search by Title,Author</label>
+                    </div>
+                    <span class="input-group-text">
+                       <button class="btn btn-dark btn-normal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                       </button>
+                    </span>
+                </div>
+            </div>
+            
+            <!--Login-->
+            <div class="col-2 login" id="log">
+                <div>
+                    <i class="fa-solid fa-user fa-1x log" data-bs-toggle="modal" data-bs-target="#register-modal"> </i>
+
+                    <button class="btn  btn-outline-white fs-6 " data-bs-toggle="modal" data-bs-target="#register-modal">Login</button>
+                </div>
+            
+                <div class="modal" id="register-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body bg-warning bg-opacity-10">
+                                <p class="h3 text-center fs-1 fw-bold mb-3">Sign in</p>
+                                <div class="social-icons mb-3">
+                                        <a href="#" class="icon text-dark"><i class="fa-brands fa-facebook-f fa-1x"></i></a>
+                                        <a href="#" class="icon text-dark"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
+                                        <a href="#" class="icon text-dark"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
+                                </div>
+
+                                <p class="text-center">or use your account</p>
+
+                                <form action="">
+                                    <div class="mb-3 ms-5 me-5">
+                                        <input type="email" class="form-control bg-secondary bg-opacity-10" placeholder="Email">
+                                    </div>
+
+                                    <div class="mb-3 ms-5 me-5">
+                                        <input type="password" class="form-control bg-secondary bg-opacity-10" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <a href="#" class=" text-decoration-none text-dark">Forgot your password?</a>
+                                    </div>
+                                    
+            
+                                    <div class="mb-3 text-center">
+                                        <input type="submit" value="Sign in" class="btn btn-outline-dark rounded-pill" data-bs-dismiss="modal">
+                                    </div>
+
+                                    <div class="mb-3 text-center">
+                                        <a href="register.html" class=" text-decoration-none text-primary text-opacity-75">Create an account?
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <!------------------------------------------------------------------------------------------->
+                <div class="position-relative d-inline-block">
+                    <i class="fa-regular fa-heart fa-1x"><span class="position-absolute top-0 start-100 translate-middle badge bg-dark bg-opacity-75 rounded-circle">0</span></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping fa-1x"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <img src="https://img.freepik.com/premium-vector/blue-white-logo-smart-book_1205884-6077.jpg?w=360" alt="Image not Found" height="50px" width="50px" class="border rounded-circle me-1">
+
+            <a href="#" class="navbar-brand">LTG BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#simple-navbar"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="simple-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link me-3">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="AboutUs.html" class="nav-link me-3 ms-3">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact-us" class="nav-link me-3 ms-3">Contact Us</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a href="#" role="button" class="nav-link dropdown-toggle me-3 ms-3" data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu bg-warning">
+                            <li><a href="#fiction" class="dropdown-item">Fiction</a></li>
+                            <li><a href="#non-fiction" class="dropdown-item">Non-Fiction</a></li>
+                            <li><a href="books-list.html" class="dropdown-item">Children</a></li>
+                            <li><a href="books-list.html" class="dropdown-item">Contemporary Fiction</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="books-list.html" class="nav-link me-3 ms-3">Popular-Series</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="books-list.html" class="nav-link me-3 ms-3">Manga Maina</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="books-list.html" class="nav-link ms-3">International</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="books-list.html" class="nav-link ms-3">More Books</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------Carousel Images---------------->
+    <div class="carousel slide" data-bs-ride="carousel" id="image-slider">
+        <!--creating carousel indicators-->
+        <div class="carousel-indicators">
+            <button data-bs-target="#image-slider" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#image-slider" data-bs-slide-to="1"></button>
+            <button data-bs-target="#image-slider" data-bs-slide-to="2"></button>
+            <button data-bs-target="#image-slider" data-bs-slide-to="3"></button>
+            <button data-bs-target="#image-slider" data-bs-slide-to="4"></button>
+            <button data-bs-target="#image-slider" data-bs-slide-to="5"></button>
+            
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://lib.utah.edu/img/HistoryofSPC-Carousel.jpg" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://www.crossword.in/cdn/shop/files/Tweak_India_All_the_colours_of_the_dark_Banners_Mobile_Desktop_1296x@2x.jpg?v=1727934766" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://www.crossword.in/cdn/shop/files/Half_Price_banners_50_off-05_1_1296x@2x.jpg?v=1720412306" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://www.crossword.in/cdn/shop/files/Crossword_Website_Banner_Dekstop_1600x450px_1296x@2x.jpg?v=1717581432" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://img.bookchor.com/web_banners/2024092578952.webp" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://www.bookswagon.com/bannerimages/81_inr.jpg?v=2.1" alt="Image not available" class="d-block w-100" height="400px" width="100%">
+            </div>
+        </div>
+
+        <!--Creating control buttons-->
+        <button class="carousel-control-prev" data-bs-target="#image-slider" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+
+        <button class="carousel-control-next" data-bs-target="#image-slider" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+
+    </div>
+
+    <!-----------------------------------------Images----------------------------------------------->
+    
+    <div class="parent-nrmal-images">
+        <div class="nrmal-images ms-3 mt-2 mb-2 rounded-3">
+            <img src="https://kitabay.com/cdn/shop/files/Copy_of_Decorate_your_home_with_Coffee_Table_Books_1.jpg?v=1727267160" alt="Image not found" >
+        </div>
+    
+        <div class="nrmal-images ms-3 mt-2 mb-2 rounded-3">
+            <img src="https://kitabay.com/cdn/shop/files/Copy_of_Decorate_your_home_with_Coffee_Table_Books.jpg?v=1727267160" alt="Image not found" >
+        </div>
+    
+        <div class="nrmal-images ms-3 mt-2 mb-2 rounded-3">
+            <img src="https://kitabay.com/cdn/shop/files/Copy_of_Decorate_your_home_with_Coffee_Table_Books_2.jpg?v=1727267160" alt="Image not found" >
+        </div>
+    
+        <div class="nrmal-images ms-3 mt-2 mb-2 rounded-3">
+            <img src="https://kitabay.com/cdn/shop/files/Copy_of_Decorate_your_home_with_Coffee_Table_Books_3.jpg?v=1727267160" alt="Image not found" >
+        </div>
+    </div>
+    
+
+    <!-- Creating Books-->
+
+    <!---------------------------------------------Fiction Books----------------------------------------------->
+    <div class="h1 text-center"><a href="#" class="text-decoration-none text-dark book-cat" id="fiction">Fiction</a></div>
+
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <!-------image-1-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/21fc450061af1d012c5cb7fb7170365a.jpg?crop=center&height=400&v=1726725845&width=247" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Dark Melody</p>
+                                <p class="book-author">by Christine Feehan</p>
+                                <p class="fw-bold"><del class="me-2 fw-light">Rs.999</del>Rs.499</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+
+            <!-------image-2-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/f44694c7f766da85fe368fbb1bb81889.jpg?crop=center&height=361&v=1726826508&width=230" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">13</p>
+                                <p class="book-author">by Kelley Armstrong</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.599</del>Rs.299</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-3-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/55dccaa20cd01fa853478752a63c4dfe.jpg?crop=center&height=346&v=1726726310&width=226" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Full House</p>
+                                <p class="book-author">by Steffie Hall</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.499</del>Rs.212</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-4-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/6d0a54cb1bb078e6b66b97c7e0a79245.jpg?crop=center&height=400&v=1726725774&width=242" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Deadly Desire</p>
+                                <p class="book-author">by Keri Arthur</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.499</del>Rs.217</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-5-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/f9d1f9c6f4d81a14a03571155dfec959.jpg?crop=center&height=246&v=1726480647&width=150" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Love Antony</p>
+                                <p class="book-author">by Lisa Genova</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.325</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-6-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://kitabay.com/cdn/shop/files/779507f5a69a5eb6dca9b2353b587c48.jpg?crop=center&height=225&v=1726468137&width=150" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Last Sacrifice</p>
+                                <p class="book-author">by Richelle Mead</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.329</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------Non Fiction Books----------------------------------------------->
+    <div class="h1 text-center"><a href="#" class="text-decoration-none text-dark book-cat" id="non-fiction">Non Fiction</a></div>
+
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <!-------image-1-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://books.google.co.in/books/publisher/content?id=i-dqDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2Wpek-eCOTToje4NWEaa4XOq4V6Q&w=1280" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Che:Cheguvera Biography </p>
+                                <p class="book-author">by Paul Bhule</p>
+                                <p class="fw-bold"><del class="me-2 fw-light">Rs.699</del>Rs.399</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+
+            <!-------image-2-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://m.media-amazon.com/images/I/71KKZlVjbwL._AC_UF1000,1000_QL80_.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Wings of Fire</p>
+                                <p class="book-author">by A.P.J Abdul Kalam</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.399</del>Rs.150</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-3-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780062080240-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Bad Blood</p>
+                                <p class="book-author">by Lorna Sage</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.299</del>Rs.199</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-4-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780679721031-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Hiroshima</p>
+                                <p class="book-author">by John Hersey</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.300</del>Rs.99</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-5-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780380003211-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Alive</p>
+                                <p class="book-author">by Pires Paul</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.325</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-6-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780312427566-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">The Right Stuff</p>
+                                <p class="book-author">by Tom Wolfe</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.329</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Manga ad images------------------------------------------------------->
+    <div class="manga-ad-images">
+        <div class="manga-images mb-2">
+            <a href="books-list.html"><img src="https://www.bookswagon.com/images/promotionimages/web/nonfictionbooksWeb.jpg?v=4.7" alt="Image not found"></a>
+        </div>
+        <div class="manga-images mb-2">
+            <a href="books-list.html"><img src="https://www.bookswagon.com/images/promotionimages/web/4_mangamaniaWeb.jpg?v=4.7" alt="Image not found"></a>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------->
+    <!-----------------------------------------Popular Series Books----------------------------------------------->
+    <div class="h1 text-center"><a href="#" class="text-decoration-none text-dark book-cat" id="popular-series">Popular-Series</a></div>
+
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <!-------image-1-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://books.google.co.in/books/publisher/content?id=i-dqDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2Wpek-eCOTToje4NWEaa4XOq4V6Q&w=1280" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Che:Cheguvera Biography </p>
+                                <p class="book-author">by Paul Bhule</p>
+                                <p class="fw-bold"><del class="me-2 fw-light">Rs.699</del>Rs.399</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            <!-------image-2-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://m.media-amazon.com/images/I/71KKZlVjbwL._AC_UF1000,1000_QL80_.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Wings of Fire</p>
+                                <p class="book-author">by A.P.J Abdul Kalam</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.399</del>Rs.150</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-3-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780062080240-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Bad Blood</p>
+                                <p class="book-author">by Lorna Sage</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.299</del>Rs.199</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-4-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780679721031-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Hiroshima</p>
+                                <p class="book-author">by John Hersey</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.300</del>Rs.99</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-5-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780380003211-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">Alive</p>
+                                <p class="book-author">by Pires Paul</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.325</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-------image-6-------->
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="position-relative">
+                            <img src="https://pictures.abebooks.com/isbn/9780312427566-us.jpg" alt="Image Not Available" class="img-fluid" height="180px" width="200px">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-light rounded-pill"><a href="#"><i class="fa-regular fa-heart fa-1x  icon-heart"></i></a></span>
+                        </div>
+
+                        <div class="card-title">
+                            <div class="lh-1 book-info text-center">
+                                <p class="mt-3 book-name">The Right Stuff</p>
+                                <p class="book-author">by Tom Wolfe</p>
+                                <p class="fw-bold"><del class="me-2 fw-light" >Rs.699</del>Rs.329</p>
+                                <div class="text-center">
+                                    <a href="orderconfrm.html"><button class="btn btn-dark btn-normal">Order now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parent-nrmal-videos">
+        <div class="nrmal-video">
+            <video src="https://kitabay.com/cdn/shop/videos/c/vp/2f69c1985d424774920bc8fa877cc80e/2f69c1985d424774920bc8fa877cc80e.HD-1080p-2.5Mbps-18029952.mp4?v=0" muted autoplay loop height="400px" width="200px"></video>
+        </div>
+
+        <div class="nrmal-video">
+            <video src="https://kitabay.com/cdn/shop/videos/c/vp/4bbe3139deea431aa2e57735368bf165/4bbe3139deea431aa2e57735368bf165.HD-1080p-2.5Mbps-18030512.mp4?v=0" muted autoplay loop height="400px" width="200px"></video>
+        </div>
+
+        <div class="nrmal-video">
+            <video src="https://kitabay.com/cdn/shop/videos/c/vp/e5c16074d9404fa780b185efcb5b89c3/e5c16074d9404fa780b185efcb5b89c3.HD-1080p-2.5Mbps-18030000.mp4?v=0" muted autoplay loop height="400px" width="200px"></video>
+        </div>
+
+        <div class="nrmal-video">
+            <video src="https://kitabay.com/cdn/shop/videos/c/vp/bf16cc01829d4ae7bef5c32b05a27c7b/bf16cc01829d4ae7bef5c32b05a27c7b.HD-1080p-2.5Mbps-18030574.mp4?v=0" muted autoplay loop height="400px" width="200px"></video>
+        </div>
+
+        <div class="nrmal-video">
+            <video src="https://kitabay.com/cdn/shop/videos/c/vp/4712a7c32a1542fabfa4eb3654c41dd5/4712a7c32a1542fabfa4eb3654c41dd5.SD-480p-0.9Mbps-18030272.mp4?v=0" muted autoplay  loop height="400px" width="200px"></video>
+        </div>
+    </div>
+
+    <!-------------------------------------------Images------------------------------------------------->
+
+    <div class="ad-images">
+        <a href="books-list.html"><img src="https://www.bookswagon.com/images/promotionimages/web/MedicalWeb.jpg?v=4.7" alt="Image not found"></a>
+    </div>
+
+    <!-------------------------------------------Featured Authors--------------------------------------->
+    <div class="h1 text-center"><a href="books-list.html" class="text-decoration-none text-dark book-cat" id="popular-series">Featured-Authors</a></div>
+
+    <div class="main-Author">
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://i.harperapps.com/hcuk/authors/006655/x500.JPG?ph=no-image-author.jpg" alt="Image not found"></a>
+        </div>
+
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://img.texasmonthly.com/2024/05/colleen-hoover-3.jpg?auto=compress&crop=faces&fit=scale&fm=pjpg&h=1024&ixlib=php-3.3.1&q=45&w=819&wpsize=large" alt="Image not found"></a>
+        </div>
+    
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://vexking.com/wp-content/uploads/2018/10/IMG_0095.jpg" alt="Image not found"></a>
+        </div>
+    
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://s3.amazonaws.com/tesla-media/speaker_media/asset/37828/portrait_xl_70_james_clear_photo.jpg" alt="Image not found"></a>
+        </div>
+    
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfa7Ty2nopVyFrdyqCOJ_Q5iT-vfoFWw_I4w&s" alt="Image not found"></a>
+        </div>
+    
+        <div class="Authors mx-2 my-2 ">
+            <a href="books-list.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVXLqETjR5B46ppWWD7V1EOUT2hoa45DaT_zZFHifeSmr-z6iqA6IBhCxxz80AK-InFR0&usqp=CAU" alt="Image not found"></a>
+        </div>
+    </div>
+
+    <!------------------------------------------------Contact Info-------------------------------------->
+    
+    <div class="cnt-ifo" id="contact-us">
+        <div class="row">
+            <div class="col-4">
+                <h2 class="mt-3 ms-3">Smart Book</h2>
+                <p class="ms-3">Ever wanted to buy a book but could not because it was too expensive? wory not! because Smart Book is here! SmartBook, these days in news, is being called as the Robinhood of the world of books. </p>
+            </div>
+    
+            <div class="col-6">
+                <h3 class="fw-medium mt-3">Contact Info</h3>
+                <div class="contact-info">
+                    <p class="fw-semibold">Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fw-normal text-opacity-75 text-dark text-decoration-none" target="_blank">Support@smartbook.in</a></p>
+                    <p class="fw-semibold">Phone: <a href="#" class="fw-normal text-opacity-75 text-dark text-decoration-none">(+91)7893123447</a></p>
+                    <p class="fw-semibold">Address: <a href="https://www.google.com/maps/place/prestige+commercial+complex/@12.9748917,77.6002865,17z/data=!4m10!1m2!2m1!1s+2,+3rd+Floor,+Prestige+Commercial+Complex,+Church+St,+Bengaluru!3m6!1s0x3bae1702b25a7727:0xfd9c91d7b903b728!8m2!3d12.9749013!4d77.6047953!15sCj8yLCAzcmQgRmxvb3IsIFByZXN0aWdlIENvbW1lcmNpYWwgQ29tcGxleCwgQ2h1cmNoIFN0LCBCZW5nYWx1cnWSARBjb3Jwb3JhdGVfb2ZmaWNl4AEA!16s%2Fg%2F11h75p1mnm?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="fw-normal text-opacity-75 text-dark text-decoration-none">2, 3rd Floor, Prestige Commercial Complex, Church St, Bengaluru</a></p>
+                </div>
+            </div>
+    
+            <div class="col-2">
+                <h3 class="fw-medium mt-3 ms-1">Follow Us</h3>
+                <div class="follow-us-on">
+                    <a href="https://www.instagram.com/__panda__loki/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram fa-1x"></i></a>
+                    <a href="https://www.facebook.com/share/bGg1qUqVccP11cDs/?mibextid=qi2Omg" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com/LokeshPanda17" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/lokesh-p-bbbb80239/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+        </div>
+        <hr>
+        <!--Links-->
+        <div class="row">
+            <div class="col-3">
+                <h3 class="fw-semibold mt-3 ms-3">Popular Series</h3>
+                <div class="ps ms-3 lh-1">
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Robert Greene Combo</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>The Made Series</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Shadow and Bone Triology</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Percy Jackson Series</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Harry Poter Box Set</p></a>
+                </div>
+            </div>
+    
+            <div class="col-3">
+                <h3 class="fw-medium mt-3 ms-3">Popular Categories</h3>
+                <div class="ps ms-3 lh-1">
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Fiction</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Combos & Box Sets</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Non-Fiction</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Contemporary Fiction</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Children's Books</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Biographics & Memories</p></a>
+                </div>
+            </div>
+     
+            <div class="col-3">
+                <h3 class="fw-medium mt-3 ms-3">Popular Authors</h3>
+                <div class="ps ms-3 lh-1">
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Robin Sharma</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Colleen Hoover</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Vex-King</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>James Clear</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Chetan Bhagat</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Robert Greene</p></a>
+                </div>
+            </div>
+    
+            <div class="col-3">
+                <h3 class="fw-medium mt-3 ms-3">Help Center</h3>
+                <div class="ps ms-3 lh-1">
+                    <a href="AboutUs.html" class="text-dark text-decoration-none text-opacity-75"><p>About Us</p></a>
+                    <a href="#" class="text-dark text-decoration-none text-opacity-75"><p>Contact Us</p></a>
+                    <a href="terms.html" class="text-dark text-decoration-none text-opacity-75"><p>Privacy policy</p></a>
+                    <a href="terms.html" class="text-dark text-decoration-none text-opacity-75"><p>Terms & Conditions</p></a>
+                    <a href="terms.html" class="text-dark text-decoration-none text-opacity-75"><p>Cancellation, Shipping & Delivery Policies</p></a>
+                    <a href="terms.html" class="text-dark text-decoration-none text-opacity-75"><p>Return & Refund Policies</p></a>
+                    <a href="terms.html" class="text-dark text-decoration-none text-opacity-75"><p>Other Policies</p></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-3 ms-4 mb-3">
+                <img src="https://img.freepik.com/premium-vector/blue-white-logo-smart-book_1205884-6077.jpg?w=360" alt="Image Not Found" height="50px" width="50px">
+            </div>
+
+            <div class="col-6">
+                <p class="text-center">Copyright &copy; 2024 SmartBooks. All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
